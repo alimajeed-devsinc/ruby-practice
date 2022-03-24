@@ -20,10 +20,15 @@ class Queue
   end
 end
 
-q = Queue.new()
-puts q.enqueue(9)
-puts q.enqueue(9)
-puts q.enqueue(9)
-puts q.enqueue(8)
-puts q.to_s
+# q = Queue.new()
+# puts q.enqueue(9)
+# puts q.enqueue(9)
+# puts q.enqueue(9)
+# puts q.enqueue(8)
+# puts q.to_s
+
+def splat(a=10,*args,**hsh)
+  print a,args,hsh
+end
+splat(a:8,b:10)
 
